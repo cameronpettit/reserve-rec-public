@@ -67,7 +67,7 @@ export class ConfigService {
       try {
         // Add blank Auth header to prevent 401
         const headers = new HttpHeaders().set('Authorization', 'config');
-        let url = '/api/config?config=public';
+        let url = 'https://dw1i1yfrs0.execute-api.ca-central-1.amazonaws.com/api/config?config=public';
         if (this.configuration['CONFIG_URL']) {
           url = this.configuration['CONFIG_URL'] + '/api/config?config=public';
         }
